@@ -1,0 +1,27 @@
+<!-- myapp/templates/myapp/menu.html -->
+{% load static %}
+<div class="sidebar-sticky">
+    <!-- Логотип -->
+    <div class="text-center mb-3">
+        <img src="{% static 'myapp/images/logo.png' %}" class="logo img-fluid" alt="Logo">
+    </div>
+
+    <!-- Меню -->
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link active" href="{% url 'home' %}">Домой</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">О Лиге чемпионов</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'services' %}">Услуги</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Контакты</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'news_home' %}">Новостная страница</a>
+        </li>
+    </ul>
+</div>
